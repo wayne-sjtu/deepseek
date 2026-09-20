@@ -1,0 +1,8 @@
+# 本目录存放 mock 数据集（mock_dataset.json），它是 gen_mock.py 的**生成物**，故被 .gitignore 忽略。
+#
+# 生成：
+#   python3 backend/app/gen_mock.py                          # 窗口终点 = 运行当天
+#   AEC_REFERENCE_DAY=2026-09-20 python3 backend/app/gen_mock.py   # 钉住日期，字节级可复现
+#
+# 归档样例数据请放 samples/ 子目录（不被忽略）：
+#   data/samples/mock_dataset_2026-09-20.json
