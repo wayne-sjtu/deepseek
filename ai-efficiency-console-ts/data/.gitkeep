@@ -1,0 +1,7 @@
+# 本目录存放 mock 数据集（mock_dataset.json），它是生成器的**生成物**，故被 .gitignore 忽略。
+#
+# 生成（TS 版，零依赖）：
+#   npm run gen:mock                                       # 窗口终点 = 运行当天
+#   AEC_REFERENCE_DAY=2026-09-20 npm run gen:mock          # 钉住日期，可复现
+#
+# 口径等价性测试需要一份**相同**的数据集喂给两个后端，用 --dataset 指向同一文件即可。

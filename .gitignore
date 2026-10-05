@@ -51,6 +51,7 @@ vite.config.ts.timestamp-*
 # ---------------------------------------------------------------------------
 # 页面自检截图：由 `npm run verify` 生成，每次运行都会覆盖
 ai-efficiency-console/frontend/verification/
+ai-efficiency-console-ts/frontend/verification/
 # 自检与调试的临时日志
 *.log
 /tmp/
@@ -63,6 +64,11 @@ ai-efficiency-console/frontend/verification/
 # 保留 .gitkeep 占位；clone 后先跑 `python3 backend/app/gen_mock.py`。
 ai-efficiency-console/data/*
 !ai-efficiency-console/data/.gitkeep
+#
+# 同上，TS 版（前后端统一 TypeScript）：数据集同样是生成物，且同样用 Python 版
+# 生成器现场产出以做口径等价性对比，不入库。
+ai-efficiency-console-ts/data/*
+!ai-efficiency-console-ts/data/.gitkeep
 #
 # 若某次需要留档（例如给业务方归档某期的样例数据），放这里，目录整体入库：
 !ai-efficiency-console/data/samples/

@@ -1,0 +1,22 @@
+{
+  "name": "ai-efficiency-console-ts",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AI 效能运营台 —— 前后端统一 TypeScript；Node 后端零运行时依赖",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "gen:mock": "node backend/src/gen_mock.ts",
+    "selftest": "node backend/src/server.ts --selftest",
+    "serve": "node backend/src/server.ts",
+    "typecheck": "tsc -p backend/tsconfig.json --noEmit",
+    "test": "node --test \"backend/src/**/*.test.ts\"",
+    "parity": "node scripts/parity-api.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.9.2"
+  }
+}
