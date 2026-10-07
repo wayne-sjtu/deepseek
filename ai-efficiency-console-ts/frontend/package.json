@@ -9,7 +9,9 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview --port 4173",
     "typecheck": "tsc --noEmit",
-    "verify": "node scripts/verify-pages.mjs"
+    "verify": "node scripts/verify-pages.mjs",
+    "build:standalone": "node scripts/build-standalone.mjs",
+    "verify:standalone": "node scripts/verify-standalone.mjs"
   },
   "dependencies": {
     "echarts": "^5.5.1",
