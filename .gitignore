@@ -73,7 +73,6 @@ ai-efficiency-console-ts/data/*
 # 单文件版看板（可离线双击打开）与它的自检截图：都是生成物，由
 #   cd ai-efficiency-console-ts/frontend && npm run build:standalone
 # 现场重建（内含 3.5MB 数据集，入库会让仓库变重且每次重建都产生 diff）。
-ai-efficiency-console.html
 ai-efficiency-console-ts/frontend/verification-standalone/
 #
 # 若某次需要留档（例如给业务方归档某期的样例数据），放这里，目录整体入库：
